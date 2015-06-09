@@ -1,0 +1,35 @@
+name: Annihilation
+main: net.PlayFriik.Annihilation.Annihilation
+authors: [coasterman10, stuntguy3000, PlayFriik]
+softdepend: [Vault]
+version: 1.5.1
+commands:
+  annihilation:
+    description: Plugin commands for Annihilation
+    aliases: anni
+  team:
+    description: Team command for Annihilation
+    aliases: t
+  vote:
+    description: Places vote for a map
+    aliases: v
+  stats:
+    description: Lists your stats
+    aliases: s
+  class:
+    description: Selects your kit
+    aliases: c
+  blue:
+    description: Join the Blue team!
+  green:
+    description: Join the Green team!
+  yellow:
+    description: Join the Yellow team!
+  red:
+    description: Join the Red team!
+  distance:
+    description: Gets distance to enemy nexuses
+    aliases: [d, dis]
+  map:
+    description: Admin Map commands
+    aliases: m
