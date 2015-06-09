@@ -1,0 +1,92 @@
+# Locations are formatted as following:
+# "x,y,z"
+# or, if you would like to add yaw/pitch
+# "x,y,z,yaw,pitch"
+
+test:
+  # Spawn points for each team, can have as many entries as you like.
+  # At least one required.
+  spawns:
+    red:
+    - "-25,65,-25"
+    yellow:
+    - "-25,65,25"
+    green:
+    - "25,65,25"
+    blue:
+    - "25,65,-25"
+  # Nexuses for each team, only one nexus each. 
+  # Required.
+  nexuses:
+    red: "-27,66,-27"
+    yellow: "-27,66,27"
+    green: "27,66,27"
+    blue: "27,66,-27"
+    
+  # Ender furnaces for each team, only one each. 
+  # Optional.
+  furnaces:
+    red: "-22,65,-22"
+    yellow: "-22,65,22"
+    green: "22,65,22"
+    blue: "22,65,-22"
+        
+  # Ender brewing stands for each team, only one each.
+  # Optional.
+  brewingstands:
+    red: "-20,65,-20"
+    yellow: "-20,65,20"
+    green: "20,65,20"
+    blue: "20,65,-20"
+    
+  # Ender chests for each team, only one each.
+  # Optional.
+  enderchests:
+    red: "-21,65,-21"
+    yellow: "-21,65,21"
+    green: "21,65,21"
+    blue: "21,65,-21"
+    
+  # Diamond locations, can have as many as you like.
+  # Optional, but highly recommended.
+  diamonds:
+  - "0,62,0"
+  - "1,62,1"
+  - "1,62,-1"
+  - "-1,62,-1"
+  - "-1,62,1"
+  
+  # Boss Configuration.
+  # Optional.
+  bosses:
+    boss1:
+      name: "&bCelariel"
+      spawn: "0,63,-21"
+      chest: "0,63,-23"
+      hearts: 100
+    boss2:
+      name: "&cFirwen"
+      spawn: "0,63,22"
+      chest: "0,63,24"
+      hearts: 100
+    
+# The spawn location for the lobby world.
+# Mandatory.
+lobby:
+  spawn: "0,64,0"
+  
+  # Team join sign locations.
+  # Optional, but highly recommended.
+  signs:
+    red:
+    - "-4,65,-3"
+    - "-3,65,-4"
+    yellow:
+    - "-4,65,3"
+    - "-3,65,4"
+    green:
+    - "4,65,3"
+    - "3,65,4"
+    blue:
+    - "4,65,-3"
+    - "3,65,-4"
