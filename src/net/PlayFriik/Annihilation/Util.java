@@ -71,7 +71,7 @@ public class Util {
 				public void run() {
 					meta.getKit().give(player, meta.getTeam());
 					player.setCompassTarget(meta.getTeam().getNexus().getLocation());
-					player.setGameMode(GameMode.ADVENTURE);
+					player.setGameMode(GameMode.SURVIVAL);
 					player.setHealth(player.getMaxHealth());
 					player.setFoodLevel(20);
 					player.setSaturation(20F);
