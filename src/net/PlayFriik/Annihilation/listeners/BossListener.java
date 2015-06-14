@@ -49,8 +49,7 @@ public class BossListener implements Listener {
             if (g.getCustomName() == null)
                 return;
 
-            final Boss b = plugin.getBossManager().bossNames.get(g
-                    .getCustomName());
+            final Boss b = plugin.getBossManager().bossNames.get(g.getCustomName());
             if (b == null)
                 return;
 
