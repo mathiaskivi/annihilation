@@ -49,7 +49,7 @@ public class VotingManager {
 			plugin.getScoreboardHandler().teams.put(map, plugin.getScoreboardHandler().sb.registerNewTeam(map));
 			plugin.getScoreboardHandler().teams.get(map).addEntry(map);
 			plugin.getScoreboardHandler().teams.get(map).setPrefix(ChatColor.AQUA + "[" + count + "] " + ChatColor.GRAY);
-			plugin.getScoreboardHandler().teams.get(map).setSuffix(ChatColor.RED + " » " + ChatColor.GREEN + "0 Votes");
+			plugin.getScoreboardHandler().teams.get(map).setSuffix(ChatColor.RED + " -> " + ChatColor.GREEN + "0 Votes");
 		}
 
 		running = true;
@@ -122,7 +122,7 @@ public class VotingManager {
 
 	private void updateScoreboard() {
 		for (String map : maps.values()) {
-			plugin.getScoreboardHandler().teams.get(map).setSuffix(ChatColor.RED + " » " + ChatColor.GREEN + countVotes(map) + " Vote" + (countVotes(map) == 1 ? "" : "s"));
+			plugin.getScoreboardHandler().teams.get(map).setSuffix(ChatColor.RED + " -> " + ChatColor.GREEN + countVotes(map) + " Vote" + (countVotes(map) == 1 ? "" : "s"));
 		}
 	}
 }
